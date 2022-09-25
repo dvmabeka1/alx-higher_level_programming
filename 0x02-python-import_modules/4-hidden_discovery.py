@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
-import hidden_4
-
 if __name__ == "__main__":
 
-    for i in dir(hidden_4):
+    import hidden_4
 
-            if i[0] == '_' and i[1] == '_':
+    for name in dir(hidden_4):
 
-                continue
+        if name[0] != '_' and name[1] != '_':
 
-            print(i)
+            print(name)
